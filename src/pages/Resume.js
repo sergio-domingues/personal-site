@@ -37,6 +37,7 @@ const Resume = () => (
                 <a href={`#${sec.toLowerCase()}`}>{sec}</a>
               </h4>))}
           </div>
+          <a href="CV-en-2020.pdf">Looking for a short version in PDF format?</a>
 
         </div>
       </header>
