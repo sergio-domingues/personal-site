@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 import ContactIcons from '../Contact/ContactIcons';
 
-const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
+// const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
 const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="sergio-budapeste-2019" />
+        {/*  THis points to linked in profile pic */}
+        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFajQJqq-LgIA/profile-displayphoto-shrink_400_400/0/1611069577945?e=1616630400&v=beta&t=-G7epNcxaZNUedaPDjmJrr4MfLAgRIVd0U4yLwqniko" alt="sergio-budapeste-2019" />
+        {/* <img src={`${PUBLIC_URL}/images/me.png`} alt="sergio-budapeste-2019" /> */}
       </Link>
       <header>
         <h2>Sérgio Domingues</h2>
