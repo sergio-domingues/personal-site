@@ -31,14 +31,14 @@ const Resume = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="resume">Resume</Link></h2>
+          <a id="download-cv" href="CV-en-2020.pdf">📜 Looking for a short version in PDF format? </a>
+          <br />
           <div className="link-container">
-            {sections.map((sec) => (
+            {sections.map((sec, index) => (
               <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+                <a href={`#${sec.toLowerCase()}`}>{index === 0 ? sec : `| ${sec}`}</a>
               </h4>))}
           </div>
-          <a href="CV-en-2020.pdf">Looking for a short version in PDF format?</a>
-
         </div>
       </header>
       <Education data={degrees} />
