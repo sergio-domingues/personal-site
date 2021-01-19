@@ -17,11 +17,12 @@ const Index = () => (
           </p>
         </div>
       </header>
-      <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,
+      <p> Welcome to my website! Please feel free to read more <Link to="/about">about me</Link>,
         or you can check out my {' '}
         <Link to="/resume">resume</Link>, {' '}
-        <Link to="/projects">projects</Link>, {' '}
-        or <Link to="/contact">contact</Link> me.
+        <Link to="/projects">projects</Link>. {' '}
+        If you find a 🐞 or for some reason, you need to get in touch with me directly, go on and {' '}
+        <Link to="/contact">contact</Link> me.
       </p>
     </article>
   </Main>
