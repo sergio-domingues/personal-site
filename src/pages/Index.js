@@ -7,7 +7,7 @@ const Index = () => (
   <Main
     description={"Sérgio Domingues' personal website. Portuguese Software Engineer based in Porto and AlumnieEI member."}
   >
-    <article className="post" id="index">
+    <article className="post link-hover-uppercase" id="index">
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="/">About this site</Link></h2>
@@ -22,7 +22,7 @@ const Index = () => (
         <Link to="/resume">resume</Link>, {' '}
         <Link to="/projects">projects</Link>. {' '}
         If you find a 🐞 or for some reason, you need to get in touch with me directly, go on and {' '}
-        <Link to="/contact">contact</Link> me.
+        <Link to="/contact">contact me</Link>.
       </p>
     </article>
   </Main>

@@ -5,6 +5,13 @@ import ContactIcons from '../Contact/ContactIcons';
 
 // const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
+const getAge = () => {
+  const birthYear = 1995; // july: 6
+  const thisYear = (new Date()).getFullYear();
+
+  return thisYear - birthYear;
+};
+
 const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
@@ -23,7 +30,11 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Sérgio.
+        <strong>TODO</strong>
+        <br />
+        Hey there, how is it going? My name is Sérgio Domingues, I&apos;m {getAge()} and
+        I currently work as a Software Engineer in the security field.
+        Nope, not a Mr. Robot wannabe although I really liked the series.
       </p>
 
       {/* <p>Hi, I&apos;m Michael. I like building things.
